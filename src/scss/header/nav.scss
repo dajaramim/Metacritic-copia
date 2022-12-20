@@ -1,0 +1,31 @@
+@use 'base/variables' as v;
+
+.nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 4rem;
+
+    &__link {
+        color: v.$blanco;
+        font-weight: bold;
+        font-size: 1.4rem;
+        text-transform: uppercase;
+        transition-duration: 200ms;
+
+        &--sign {
+            text-transform: none;
+            border: 1px solid v.$blanco;
+            border-radius: 7px;
+            padding: 0.8rem 1.5rem;
+        }
+
+        &:hover:not(.nav__link--sign) {
+            border-bottom: 2px solid v.$blanco;
+            padding: 1rem 0;
+            
+        }
+    }
+
+
+}

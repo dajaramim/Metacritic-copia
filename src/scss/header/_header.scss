@@ -1,0 +1,36 @@
+@use 'base/variables' as v;
+
+.header {
+
+    background-color: v.$negro;
+    color: v.$blanco;
+    padding: 2rem 2rem 2rem 2rem;
+    font-family:  Helvetica, sans-serif;
+
+    &__contenedor {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__logo {
+        width: 15rem;
+        
+    }
+    &__search {
+        width: 45rem;
+        display: flex;
+        justify-content: space-between;
+        border: 1px solid v.$blanco;
+        border-radius: 7px;
+        padding: 0 2rem;
+
+        &:hover {
+            cursor: text ;
+        }
+    }
+    &__texto {
+        font-size:1.4rem;
+    }
+    
+}
